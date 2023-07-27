@@ -1,0 +1,22 @@
+# Top-most EditorConfig file
+root = true
+
+# Set default charset, indentation, line length, trim trailing whitespace
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+tab_width = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+max_line_length = 100
+insert_final_newline = true
+
+# Override settings for Java files
+[*.java]
+indent_size = 4
+max_line_length = 120
+
+# Override settings for XML and YAML files
+[*.{xml,yml}]
+max_line_length = 80

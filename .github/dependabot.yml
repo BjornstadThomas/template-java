@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Enable version updates for Maven
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "Maven"
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "GitHub Actions"
+    # Automatically merge updates if they pass CI
+    auto-merge: on
